@@ -1,0 +1,27 @@
+
+Projeto: Simulação Multi-Threaded Producer-Consumer com Buffer Limitado
+
+Descrição:
+Implementação de um buffer limitado compartilhado com duas threads produtoras e duas consumidoras utilizando C e pthreads.
+O buffer é protegido por mutex e condicionais para garantir a sincronização.
+
+Componentes:
+- Buffer FIFO de tamanho fixo (10 posições)
+- Threads produtoras lendo de arquivo input.txt
+- Threads consumidoras processando e exibindo dados
+- Controle de sincronização com pthread_mutex_t e pthread_cond_t
+
+Destaques:
+- Demonstração clara de Seção Crítica
+- Prevenção de Race Condition
+- Uso real de sincronização de threads em C
+- Parada automática após consumir todos os dados
+
+Compilação:
+gcc -o producer_consumer producer_consumer.c -lpthread
+
+Execução:
+./producer_consumer
+
+Integrantes:
+Mamdh Alsode
